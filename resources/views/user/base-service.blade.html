@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>Appway - HTML 5 Template Preview</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="{{URL::asset('/public/user/images/favicon.ico')}}" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="{{URL::asset('/public/user/css/font-awesome-all.css')}}" rel="stylesheet">
+    <link href="{{URL::asset('/public/user/css/flaticon.css')}}" rel="stylesheet">
+    <link href="{{URL::asset('/public/user/css/owl.css')}}" rel="stylesheet">
+    <link href="{{URL::asset('/public/user/css/bootstrap.css')}}" rel="stylesheet">
+    <link href="{{URL::asset('/public/user/css/jquery.fancybox.min.css')}}" rel="stylesheet">
+    <link href="{{URL::asset('/public/user/css/animate.css')}}" rel="stylesheet">
+    <link href="{{URL::asset('/public/user/css/imagebg.css')}}" rel="stylesheet">
+    <link href="{{URL::asset('/public/user/css/style.css')}}" rel="stylesheet">
+    <link href="{{URL::asset('/public/user/css/responsive.css')}}" rel="stylesheet">
+
+</head>
+
+
+<!-- page wrapper -->
+<body class="boxed_wrapper">
+
+    <!-- preloader -->
+    <div class="preloader"></div>
+    <!-- preloader -->
+
+    <header class="main-header home-16">
+        <div class="outer-container">
+            <div class="container">
+                <div class="main-box clearfix">
+                    <div class="logo-box pull-left">
+                        <figure class="logo"><a href="/"><img src="{{URL::asset('/public/user/images/logo-bd-2.png')}}" alt="" width="205"></a></figure>
+                    </div>
+                    <div class="menu-area pull-right clearfix">
+                        <!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler">
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                        </div>
+                        <nav class="main-menu navbar-expand-md navbar-light">
+                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li class="current dropdown"><a href="/">Home</a>
+
+                                    </li> 
+                                    <li class="dropdown"><a href="/about">About</a>
+
+                                    </li>
+                                    <li class="dropdown"><a href="/our-service">Our Service</a>
+                                        <ul>
+                                            <li><a href="/IT/consulting">IT Consulting</a></li>
+                                            <li><a href="/software-house">Sofware House</a></li>
+                                            <li><a href="/website">Website</a></li>
+                                            <li><a href="/android">App Android</a></li>
+                                            <li><a href="/gap/analysis">Gap Analysis</a></li>
+                                            <li><a href="/management-bussines">Consultation Management Bussines</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="/visi-misi">Visi Misi</a>
+
+                                    </li>
+                                    <li class="dropdown"><a href="/team">Team</a>
+                                        <!-- <ul>
+                                            <li><a href="blog.html">Latest News</a></li>
+                                            <li><a href="blog-details.html">News Details</a></li>
+                                        </ul> -->
+                                    </li>                              
+                                    <li><a href="/contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <div class="btn-box"><a href="/"><i class="fab fa-whatsapp"></i> Contact Live</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--sticky Header-->
+        <div class="sticky-header">
+            <div class="container clearfix">
+                <figure class="logo-box"><a href="/"><img src="{{URL::asset('/public/user/images/logo-bd-2.png')}}" width="180" alt=""></a></figure>
+                <div class="menu-area">
+                    <nav class="main-menu clearfix">
+                        <!--Keep This Empty / Menu will come through Javascript-->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+        
+        <nav class="menu-box">
+            <div class="nav-logo"><a href="/"><img src="{{URL::asset('/public/user/images/logo-bd-2.png')}}" alt="" title="" width="160"></a></div>
+            <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+            <div class="contact-info">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>Chicago 12, Melborne City, USA</li>
+                    <li><a href="tel:+8801682648101">+88 01682648101</a></li>
+                    <li><a href="mailto:info@example.com">info@example.com</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <ul class="clearfix">
+                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                    <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
+                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="#"><span class="fab fa-youtube"></span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div><!-- End Mobile Menu -->
+
+
+    <!-- page-title -->
+    <section class="page-title style-two">
+        <div class="container">
+            <div class="content-box clearfix">
+                @yield('content-service')
+            </div>
+        </div>
+    </section>
+    <!-- page-title end -->
+
+
+    @yield('content-service-dua')
+
+
+   <!-- main-footer -->
+    <footer class="main-footer style-five style-six style-seven">
+        <div class="container">
+            <div class="footer-top">
+                <div class="widget-section">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
+                            <div class="about-widget footer-widget">
+                                <figure class="footer-logo"><a href="index.html"><img src="{{URL::asset('/public/user/images/logo-bd-2.png')}}" alt="" width="185"></a></figure>
+                                <div class="text">Lorem ipsum dolor sit consectetur adipisicing elit, sed do eiusmod tempor .........</div>
+                                <div class="apps-download">
+                                    <h3>Download the App</h3>
+                                    <div class="download-btn">
+                                        <!-- <a href="#" class="app-store-btn">
+                                            <i class="fab fa-apple"></i>
+                                            <span>Download on the</span>
+                                            App Store
+                                        </a> -->
+                                        <a href="#" class="google-play-btn">
+                                            <i class="fab fa-android"></i>
+                                            <span>Get on it</span>
+                                            Google Play
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+                            <div class="links-widget footer-widget">
+                                <h4 class="widget-title">Our Services</h4>
+                                <div class="widget-content">
+                                    <ul class="list clearfix">
+                                        <li><a href="/IT/consulting">IT Consulting</a></li>
+                                        <li><a href="/sofware-houser">Sofware House</a></li>
+                                        <li><a href="/website">Website</a></li>
+                                        <li><a href="/android">App Android</a></li>
+                                        <li><a href="/gap/analysis">Gap Analysis</a></li>
+                                        <li><a href="/management-bussines">Consultation Management Bussines</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="contact-widget footer-widget">
+                                <h4 class="widget-title">Contact Us</h4>
+                                <div class="widget-content">
+                                    <ul class="contact-info clearfix">
+                                        <li><i class="fas fa-map-marker-alt"></i> 25 Bedford St. New York City.</li>
+                                        <li><i class="fas fa-phone"></i><a href="tel:0665184575181">(+066) 518 - 457 - 5181</a></li>
+                                        <li><i class="fas fa-envelope"></i><a href="mailto:info@example.com">info@example.com</a></li>
+                                    </ul>
+                                </div>
+                                <!-- <ul class="social-links clearfix">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                </ul> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="links-widget footer-widget">
+                                <h4 class="widget-title">About Company</h4>
+                                <div class="widget-content">
+                                    <ul class="list clearfix">
+                                        <li><a href="#">Appway Online</a></li>
+                                        <li><a href="#">Our Leadership</a></li>
+                                        <li><a href="#">Carrers</a></li>
+                                        <li><a href="#">What We Do</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="footer-bottom clearfix">
+                <ul class="footer-nav pull-right">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Legal</a></li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="copyright">&copy; 2020 <a href="/">Big Data</a> | Desain and Development By : Team IT bigdata</div>
+    </footer>
+    <!-- main-footer end -->
+
+
+    <!-- sidebar cart item -->
+    <div class="xs-sidebar-group info-group info-sidebar">
+        <div class="xs-overlay xs-bg-black"></div>
+        <div class="xs-sidebar-widget">
+            <div class="sidebar-widget-container">
+                <div class="widget-heading">
+                    <a href="#" class="close-side-widget">
+                        X
+                    </a>
+                </div>
+                <div class="sidebar-textwidget">
+
+                    <!-- Sidebar Info Content -->
+                    <div class="sidebar-info-contents">
+                        <div class="content-inner">
+                            <div class="logo">
+                                <a href="index.html"><img src="{{URL::asset('/public/user/images/logo-2.png')}}" alt="" /></a>
+                            </div>
+                            <div class="content-box">
+                                <h4>About Us</h4>
+                                <p class="text">Lorem ipsum dolor amet consectetur sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor amet consectetur adipisicing sed do eiusmod tempor incididunt ut labore.</p>
+                                <a href="#" class="theme-btn-two">Explore</a>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Contact Info</h4>
+                                <ul>
+                                    <li>Chicago 12, Melborne City, USA</li>
+                                    <li><a href="tel:+8801682648101">+88 01682648101</a></li>
+                                    <li><a href="mailto:info@example.com">info@example.com</a></li>
+                                </ul>
+                            </div>
+                            <!-- Social Box -->
+                            <!-- <ul class="social-box">
+                                <li class="facebook"><a href="#" class="fab fa-facebook-f"></a></li>
+                                <li class="twitter"><a href="#" class="fab fa-twitter"></a></li>
+                                <li class="linkedin"><a href="#" class="fab fa-linkedin-in"></a></li>
+                                <li class="instagram"><a href="#" class="fab fa-instagram"></a></li>
+                                <li class="youtube"><a href="#" class="fab fa-youtube"></a></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END sidebar widget item -->
+
+
+    <!-- donate popup -->
+    <!-- <div id="donate-popup" class="donate-popup">
+        <div class="close-donate"><i class="far fa-window-close"></i></div>
+        <div class="popup-inner">
+            <div class="container">
+                <div class="donate-form-area">
+                    <h2>Donation Information</h2>
+                    <h4>How much would you like to donate:</h4>
+                    <form  action="#" class="donate-form default-form">
+                        <ul class="chicklet-list clearfix">
+                            <li>
+                                <input type="radio" id="donate-amount-1" name="donate-amount" />
+                                <label for="donate-amount-1" data-amount="1000" >$1000</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="donate-amount-2" name="donate-amount" checked="checked" />
+                                <label for="donate-amount-2" data-amount="2000">$2000</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="donate-amount-3" name="donate-amount" />
+                                <label for="donate-amount-3" data-amount="3000">$3000</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="donate-amount-4" name="donate-amount" />
+                                <label for="donate-amount-4" data-amount="4000">$4000</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="donate-amount-5" name="donate-amount" />
+                                <label for="donate-amount-5" data-amount="5000">$5000</label>
+                            </li>
+                            <li class="other-amount">
+
+                                <div class="input-container" data-message="Every dollar you donate helps end hunger.">
+                                    <span>Or</span><input type="text" id="other-amount" placeholder="Other Amount"  />
+                                </div>
+                            </li>
+                        </ul>
+                        <h3>Donor Information</h3>
+                        <div class="form-bg">
+                            <div class="row clearfix">
+                                <div class="col-lg-6 col-md-6 col-sm-12">           
+                                    <div class="form-group">
+                                        <p>Your Name*</p>
+                                        <input type="text" name="fname" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <p>Email*</p>
+                                        <input type="text" name="fname" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <p>Address*</p>
+                                        <input type="text" name="fname" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <p>Phn Num*</p>
+                                        <input type="text" name="fname" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="payment-option">
+                            <li>
+                                <h4>Choose your payment method:</h4>
+                            </li>
+                            <li>
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="pay-us" type="checkbox">
+                                        <span>Paypal</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                             <div class="checkbox">
+                                <label>
+                                    <input name="pay-us" type="checkbox">
+                                    <span>Offline Donation</span>
+                                </label>
+                            </div> 
+                        </li>
+                        <li>
+                            <div class="checkbox">
+                                <label>
+                                    <input name="pay-us" type="checkbox">
+                                    <span>Credit Card</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox">
+                                <label>
+                                    <input name="pay-us" type="checkbox">
+                                    <span>Debit Card</span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="center"><button class="theme-btn-two" type="submit">Donate Now</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- donate popup -->
+
+
+
+<!--Scroll to top-->
+<button class="scroll-top scroll-to-target" data-target="html">
+    <span class="fa fa-arrow-up"></span>
+</button>
+
+
+<!-- jequery plugins -->
+<script src="{{URL::asset('/public/user/js/jquery.js')}}"></script>
+<script src="{{URL::asset('/public/user/js/popper.min.js')}}"></script>
+<script src="{{URL::asset('/public/user/js/bootstrap.min.js')}}"></script>
+<script src="{{URL::asset('/public/user/js/owl.js')}}"></script>
+<script src="{{URL::asset('/public/user/js/wow.js')}}"></script>
+<script src="{{URL::asset('/public/user/js/validation.js')}}"></script>
+<script src="{{URL::asset('/public/user/js/jquery.fancybox.js')}}"></script>
+<script src="{{URL::asset('/public/user/js/appear.js')}}"></script>
+<script src="{{URL::asset('/public/user/js/circle-progress.js')}}"></script>
+<script src="{{URL::asset('/public/user/js/jquery.countTo.js')}}"></script>
+<script src="{{URL::asset('/public/user/js/scrollbar.js')}}"></script>
+<script src="{{URL::asset('/public/user/js/jquery.paroller.min.js')}}"></script>
+<script src="{{URL::asset('/public/user/js/countdown.js')}}"></script>
+<script src="{{URL::asset('/public/user/js/tilt.jquery.js')}}"></script>
+
+<!-- main-js -->
+<script src="{{URL::asset('/public/user/js/script.js')}}"></script>
+
+</body><!-- End of .page_wrapper -->
+</html>
